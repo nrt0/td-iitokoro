@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assessment.css">
+    <title>あなたのいいところ診断</title>
+  </head>
+  <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD_p4ybhxwD9qJ7ZJvq5tNQfHRlS3CBFg4",
+          authDomain: "td-iitokoro.firebaseapp.com",
+          projectId: "td-iitokoro",
+          storageBucket: "td-iitokoro.appspot.com",
+          messagingSenderId: "1038556276375",
+          appId: "1:1038556276375:web:9d1bafcb8c18bb7894ebd2",
+          measurementId: "G-L90D5S7VBR"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+    <h1>あなたのいいところは?</h1>
+    <p>診断したい名前を入れて下さい</p>
+    <input type="text" id="user-name" size="40" maxlength="20">
+    <button id="assessment">診断する</button>
+    <div id="result-area"></div>
+    <div id="tweet-area"></div>
+    <script src="assessment.js"></script>
+  </body>
+</html>
