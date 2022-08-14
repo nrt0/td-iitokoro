@@ -1,5 +1,5 @@
 body {
-    background-color: #04a6eb;
+    background-color: #5e7151;
     color: #fdffff;
     width: 500px;
     margin-right: auto;
@@ -15,3 +15,17 @@ body {
   input {
     height: 20px;
   }
+
+  .main{
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+.img-cat{
+  display:block;
+  width: 100%;
+  height:auto;
+  margin: 1rem auto 0;
+  border-radius: 0.5rem;
+}
